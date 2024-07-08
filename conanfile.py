@@ -4,7 +4,7 @@ from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout, CMakeDeps
 
 class counter_timer_vecRecipe(ConanFile):
     name = "counter-timer-vec"
-    version = "0.1.0"
+    version = "0.2.0"
 
     # Optional metadata
     license = "MPLv2"
@@ -20,7 +20,7 @@ class counter_timer_vecRecipe(ConanFile):
     exports_sources = "CMakeLists.txt", "include/*"
 
     def requirements(self):
-        self.requires("counter-timer/[~0.2]")
+        self.requires("counter-timer/[~0.3]")
         self.requires("rcu-vector/[~0.1]")
 
     def layout(self):
